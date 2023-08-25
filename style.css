@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;400;900&display=swap');
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Roboto', sans-serif; */
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+    opacity: 1;
+}
+
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a{
+    opacity: 0.2;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FEE440;
+}
+li{
+    list-style-type: none;
+}
+.opcao{
+    width: 100px;
+}
+.divPPT{
+    display: flex;
+    padding: 50px;
+    gap: 80px;
+    border-radius: 10px;
+}
+.divAll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#versus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#jogadorEscolha{
+    background-color: #9B5DE5;
+}
+#computadorEscolha{
+    background-color: #00BBF9;
+}
+.PPT{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 70px;
+}
+#titulo{
+    color: #F15BB5;
+    font: 400 48px 'Bebas Neue', sans-serif;
+}
+b{
+    font: 400 48px 'Bebas Neue', sans-serif;
+    color: #00F5D4;
+}
+.nome{
+    width: 100px;
+    text-align: end;
+    font: 400 40px 'Bebas Neue', sans-serif;
+}
+.pontos{
+    width: 100px;
+    text-align: start;
+    font: 400 40px 'Bebas Neue', sans-serif;
+}
+#jogadorNome, #jogadorPontos{
+    color: #9B5DE5;
+}
+#computadorNome, #computadorPontos{
+    color: #00BBF9;
+}
+#mensagem{
+    color: #F15BB5;
+    font: 400 40px 'Bebas Neue', sans-serif;
+}

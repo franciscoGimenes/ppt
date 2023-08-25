@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>pedra, papel, tesoura</title>
+</head>
+<body>
+    <div id="principal">
+        <h1 id="titulo">pedra <b>papel</b> e tesoura</h1>
+        <div id="placar">
+            <div class="divAll" id="jogador">
+                <div class="PPT">
+                    <p class="pontos" id="jogadorPontos">0</p>
+                    <ul class="divPPT" id="jogadorEscolha">
+                        <li><a onclick="jogar(1)" id="jogadorEscolha1"><img class="opcao" src="pedra.png" alt="pedra"></a></li>
+                        <li><a onclick="jogar(2)" id="jogadorEscolha2"><img class="opcao" src="papel.png" alt="papel"></a></li>
+                        <li><a onclick="jogar(3)" id="jogadorEscolha3"><img class="opcao" src="tesoura.png" alt="tesoura"></a></li>
+                    </ul>
+                    <h2 class="nome" id="jogadorNome">Você</h2>
+                </div>
+            </div>
+
+            <div id="versus">            
+                <div id="mensagem">VS</div>  
+            </div>
+
+            <div class="divAll" id="computador">
+                <div class="PPT">
+                    <p class="pontos" id="computadorPontos">0</p>
+                    <ul class="divPPT" id="computadorEscolha">
+                        <li><a id="computadorEscolha1"><img class="opcao" src="pedra.png" alt="pedra"></a></li>
+                        <li><a id="computadorEscolha2"><img class="opcao" src="papel.png" alt="papel"></a></li>
+                        <li><a id="computadorEscolha3"><img class="opcao" src="tesoura.png" alt="tesoura"></a></li>
+                    </ul>
+                    <h2 class="nome" id="computadorNome">Verme</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
